@@ -10,20 +10,10 @@
   <title>Document</title>
 </head>
 <body>
-<nav>
-@include('nav-bar');
-</nav>
-<div class="container">
-    <div class="container-content">
-        <div class="tagline-container">
-            <h3 class="tagline">Your #1 gaming review community</h3>
-            <button class="button" style="vertical-align:middle"><span>Sign up</span></button>
-        </div>
-    </div>
-</div>
-</div>
+<header>
+    @include('nav-bar');
+</header>
 
-<section class="black-underbar"></section>
 
 <div class="grid">
     <div class="grid-item">

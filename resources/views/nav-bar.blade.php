@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="primary-header">
-        <div class="container">
+        <div class="container-nav-bar">
             <nav class="primary-navigation">
                 <div class="logo">
                     <a href="index.html"><img src="{{ asset('img/LUL-logo.png') }}" id="logo" alt="Level Up Library"></a>

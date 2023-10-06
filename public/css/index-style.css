@@ -7,16 +7,6 @@ background-image: radial-gradient( ellipse farthest-corner at 10px 10px , #d8d9e
 background-size: 10px 10px;
 }
 
-
-#logo{
-  max-width: 350px;
-  height: auto;
-}
-
-.fa-regular{
-  color: white;
-}
-
 .black-underbar{
   padding:0.04%;
   background-color: black;
@@ -24,7 +14,7 @@ background-size: 10px 10px;
 
 .grid{
   display: grid;
-  margin-top: 3%;
+  margin-top: 2%;
   grid-gap: 2%;
   grid-template-columns: 14.5rem 14.5rem 14.5rem 14.5rem;
   grid-template-rows: 14.5rem 14.5rem 14.5rem;
@@ -201,53 +191,6 @@ p.featured-snippet {
 .featured-snippet{
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-#nav-right-side{
-  display: flex;
-  padding-left:10%;
-  justify-content: space-between;
-  align-items:flex-end;
-  margin-right: 2%;
-}
-
-.nav-links{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-}
-
-.nav-links a{
-  margin-right: 4rem;
-}
-
-.nav-search{
-  display:flex;
-  align-items: center;
-  justify-content:center;
-}
-
-.nav-search input[type="search"] {
-  margin-right: 10px;
-  padding:4%;
-}
-
-
-a{
-  text-decoration: none;
-  color: #f9f9f9;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight:bold;
-  padding: 0%;
-}
-
-a:hover{
-  color:rgb(255, 255, 51);
-  opacity: 90%;
-}
-
 
 @media screen and (max-width: 768px) {
     .tagline-container {
