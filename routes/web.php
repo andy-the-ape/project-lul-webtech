@@ -13,5 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/','index');
+Route::view('/home','index');
+
+Route::view('/login','loginForm');
+
+Route::view('/profile','profilePage');
+
+Route::view('/rating','rating-page');
+
+Route::view('/create-user','createForm');
+
+Route::view('/game','gamepage');
+
+
 

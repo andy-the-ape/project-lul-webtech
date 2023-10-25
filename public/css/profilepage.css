@@ -8,6 +8,15 @@ body {
     font-family: "Tahoma", sans-serif;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5f7;
+    opacity: 87%;
+    background-image: radial-gradient( ellipse farthest-corner at 10px 10px , #d8d9eb, #d8d9eb 50%, #e5e5f7 50%);
+    background-size: 10px 10px;
+}
+
 img {
     height: auto;
     max-width: 100%;
@@ -20,72 +29,6 @@ img {
     z-index: 1;
     position: fixed;
     width: 100%;
-}
-
-.primary-navigation {
-    background-color: #000000;
-    opacity: 97%;
-    background-image: radial-gradient( ellipse farthest-corner at 10px 10px , #131212, #383232 50%, #262222 50%);
-    background-size: 10px 10px;
-    display: flex;
-    max-height: 4rem;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    text-transform:uppercase;
-}
-
-.fa-regular{
-    color: white;
-    padding: 1rem;
-    cursor: pointer;
-}
-
-.logo {
-    max-width: 18rem;
-    vertical-align: central;
-}
-
-#nav-right-side{
-    display: flex;
-    padding-left:10%;
-    justify-content: space-between;
-    align-items:flex-end;
-    margin-right: 2%;
-}
-
-.nav-links{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-}
-
-.nav-search{
-    display:flex;
-    align-items: center;
-    justify-content:center;
-}
-
-.nav-search input[type="search"] {
-    margin-right: 10px;
-    padding:4%;
-    border-radius: 0.3rem;
-}
-
-.nav-links a {
-    margin-right: 4rem;
-    text-decoration: none;
-    color: #f9f9f9;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:bold;
-    padding: 0;
-}
-
-a:hover{
-    color: coral;
-    opacity: 90%;
 }
 
 .container2 {

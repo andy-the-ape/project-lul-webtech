@@ -8,6 +8,11 @@
         <link rel="stylesheet" href="{{ asset('css/rating-style.css') }}">
         <script defer src="{{ asset('js/ratingpage.js') }}"></script>
     </head>
+
+    <header>
+    @include('nav-bar');
+    </header>
+
     <body>
         <div class="write_review">
             <div class="rating_section">

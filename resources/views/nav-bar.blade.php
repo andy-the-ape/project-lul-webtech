@@ -13,11 +13,11 @@
         <div class="container-nav-bar">
             <nav class="primary-navigation">
                 <div class="logo">
-                    <a href="index.html"><img src="{{ asset('img/LUL-logo.png') }}" id="logo" alt="Level Up Library"></a>
+                    <a href="{{url('/home')}}"><img src="{{ asset('img/LUL-logo.png') }}" id="logo" alt="Level Up Library"></a>
                 </div>
                 <div id="nav-right-side">
                     <div class="nav-links desktop-nav-links">
-                        <a href="games.html">Browse</a>
+                        <a href="{{url('/game')}}">Browse</a>
                         <a href="topgames.html">Top Picks</a>
                     </div>
                     <div class="hamburger-menu">

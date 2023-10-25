@@ -13,8 +13,6 @@
 <header>
     @include('nav-bar');
 </header>
-
-
 <div class="grid">
     <div class="grid-item">
         <img src="https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png">

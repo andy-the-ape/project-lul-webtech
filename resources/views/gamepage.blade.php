@@ -7,27 +7,8 @@
     <script src="https://kit.fontawesome.com/e7bbbc0c8d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="primary-header">
-        <div class="container">
-            <nav class="primary-navigation">
-                <!--Input nav-bar code in here-->
-                    <div class="logo">
-                        <a href="#"><img src="resources/LUL-logo.png" id="logo" alt="Level Up Library"></a>
-                    </div>
-                    <div id="nav-right-side">
-                        <div class ="nav-links">
-                            <a href="#">Browse</a>
-                            <a href="#">Top Picks</a>
-                        </div>
-                        <div class="nav-search">
-                            <label>
-                                <input type ="search" placeholder="Search for games">
-                            </label>
-                            <i class="fa-regular fa-user"></i>
-                        </div>
-                    </div>
-                </nav>
-        </div>
+    <header>
+       @include ('nav-bar');
     </header>
     <div class="game-cover-image">
     </div>
