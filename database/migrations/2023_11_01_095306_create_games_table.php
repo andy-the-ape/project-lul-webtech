@@ -12,11 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('games', function (Blueprint $table) {
-            $table->id('game_id');
+            $table->bigIncrements('game_id');
             $table->String('name');
             $table->String('description');
             $table->float('aggregate_rating');
-            $table->timestamps('release_date');
+            $table->date('release_date');
+            $table->timestamps(); //Automatically creates a 'created on' and 'updated-at'
 
         });
     }

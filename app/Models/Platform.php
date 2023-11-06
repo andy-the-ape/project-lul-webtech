@@ -2,6 +2,9 @@
 
 namespace App\Models;
 
+use Database\Factories\GameFactory;
+use Database\Factories\PlatformFactory;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -9,6 +12,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class Platform extends Model
 {
     use HasFactory;
+
+    public $timestamps = false;
+
+    protected static function newFactory(): Factory
+    {
+        return PlatformFactory::new();
+    }
 
     public function games(): BelongsToMany {
         return $this->belongsToMany(Game::class);
@@ -18,5 +28,6 @@ class Platform extends Model
 
     protected $primaryKey = 'platform_id';
 
-    protected $attributes = 'name';
+//    protected $attributes = 'name';
+
 }

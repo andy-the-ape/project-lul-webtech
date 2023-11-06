@@ -12,7 +12,7 @@ class Review extends Model
 
     protected $table = "reviews";
 
-    protected $primaryKey = ['user_email','game_id'];
+    protected $primaryKey = ['user_id','game_id'];
 
     protected $attributes = [
         'rating',

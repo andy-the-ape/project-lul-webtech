@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Database\Factories\GameFactory;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -10,6 +12,11 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Game extends Model
 {
     use HasFactory;
+
+    protected static function newFactory(): Factory
+    {
+        return GameFactory::new();
+    }
 
     public function reviews(): HasMany {
         return $this->hasMany(Review::class);
@@ -28,10 +35,8 @@ class Game extends Model
     protected $primaryKey = 'game_id';
 
     protected $attributes = [
-        'name',
-        'description',
-        'aggregate_rating',
-        'release_date'
+        //Deleted this - it is used for creating an instance of an entity and has to be defined explicitly only for a single entity object.
+        //Don't know if we need it right now. Confused the Factory by trying to insert values from 0-3 in the array of Database when creating dummy objects.
     ];
 
 }

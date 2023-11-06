@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('platforms', function (Blueprint $table) {
             $table->id('platform_id');
-            $table->String('name');
+            $table->string('name');
         });
     }
 

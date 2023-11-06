@@ -18,5 +18,5 @@ class Studio extends Model
 
     protected $primaryKey = 'studio_id';
 
-    protected $attributes = 'name';
+//    protected $attributes = 'name';
 }
