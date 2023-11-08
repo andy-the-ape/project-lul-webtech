@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
 //        Game::factory(15)->create();
 //        Platform::factory(10)->create();
 //        User::factory(50)->create();
-        Review::factory(30)->create();
+//        Review::factory(30)->create();
 
 //         Studio::factory()->create([
 //            'name' => 'Blizzard',
@@ -29,12 +29,12 @@ class DatabaseSeeder extends Seeder
 //            'name' => 'Rockstar Games',
 //        ]);
 
-//        Review::factory()->create([
-//            'description' => 'Lovely game',
-//            'rating' => '2.5',
-//            'user_id' => '1',
-//            'game_id' => '2'
-//        ]);
+        Review::factory()->create([
+            'description' => 'Lovely game',
+            'rating' => '2.5',
+            'user_id' => '1',
+            'game_id' => '2'
+        ]);
 //    }
     }
 

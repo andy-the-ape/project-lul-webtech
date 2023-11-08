@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GameController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,11 @@ Route::view('/rating','rating-page');
 Route::view('/create-user','createForm');
 
 Route::view('/game','gamepage');
+
+Route::get('/games',[GameController::class,'index']);
+
+Route::view('/g','browse');
+
 
 
 

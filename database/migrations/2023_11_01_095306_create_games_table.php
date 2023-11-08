@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('games', function (Blueprint $table) {
             $table->bigIncrements('game_id');
-            $table->String('name');
-            $table->String('description');
+            $table->string('name');
+            $table->string('description');
             $table->float('aggregate_rating');
             $table->date('release_date');
             $table->timestamps(); //Automatically creates a 'created on' and 'updated-at'
