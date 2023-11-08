@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Game;
+use App\Models\Studio;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -14,10 +16,13 @@ class StudioFactory extends Factory
      *
      * @return array<string, mixed>
      */
+
+    protected $model = Studio::class;
+
     public function definition(): array
     {
         return [
-            //
+            'name'=>fake()->name
         ];
     }
 }

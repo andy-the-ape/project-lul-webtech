@@ -18,17 +18,17 @@ class Game extends Model
         return GameFactory::new();
     }
 
-    public function reviews(): HasMany {
+    public function review(): HasMany {
         return $this->hasMany(Review::class);
     }
 
-    public function studios(): BelongsToMany {
-        return $this->belongsToMany(Studio::class);
-    }
+//    public function studios(): BelongsToMany {
+//        return $this->belongsToMany(Studio::class);
+//    }
 
-    public function platforms(): BelongsToMany {
-        return $this->belongsToMany(Platform::class);
-    }
+//    public function platforms(): BelongsToMany {
+//        return $this->belongsToMany(Platform::class);
+//    }
 
     protected $table = "games";
 

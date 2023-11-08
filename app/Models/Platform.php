@@ -7,6 +7,7 @@ use Database\Factories\PlatformFactory;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Platform extends Model
@@ -18,10 +19,6 @@ class Platform extends Model
     protected static function newFactory(): Factory
     {
         return PlatformFactory::new();
-    }
-
-    public function games(): BelongsToMany {
-        return $this->belongsToMany(Game::class);
     }
 
     protected $table = "platforms";
