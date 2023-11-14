@@ -11,6 +11,10 @@
         @include ('nav-bar')
     </header>
 <body>
-<div id="allgames"></div>
+
+<div id="allgames">
+
+</div>
+
 </body>
 </html>

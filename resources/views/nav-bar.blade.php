@@ -17,7 +17,7 @@
                 </div>
                 <div id="nav-right-side">
                     <div class="nav-links desktop-nav-links">
-                        <a href="{{url('/game')}}">Browse</a>
+                        <a href="{{url('/browse')}}">Browse</a>
                         <a href="topgames.html">Top Picks</a>
                     </div>
                     <div class="hamburger-menu">

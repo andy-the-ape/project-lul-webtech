@@ -29,7 +29,7 @@ Route::view('/game','gamepage');
 
 Route::get('/games',[GameController::class,'index']);
 
-Route::view('/g','browse');
+Route::view('/browse','browse');
 
 
 
