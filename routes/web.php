@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\GameController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,24 +13,19 @@ use App\Http\Controllers\GameController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::view('/','index');
 
-Route::view('/home','index');
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::view('/login','loginForm');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::view('/profile','profilePage');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
 
-Route::view('/rating','rating-page');
-
-Route::view('/create-user','createForm');
-
-Route::view('/game','gamepage');
-
-Route::get('/games',[GameController::class,'index']);
-
-Route::view('/browse','browse');
-
-
-
-
+require __DIR__.'/auth.php';
